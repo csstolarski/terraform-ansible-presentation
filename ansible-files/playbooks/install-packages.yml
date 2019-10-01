@@ -1,0 +1,13 @@
+---
+- hosts: "test-servers"
+  become: yes
+  remote_user: ec2-user
+  tasks:
+    - name: "install startup packages"
+      include_role:
+        name: test-servers/common
+        tasks_from: install_packages.yml
+    - name: "create user"
+      include_role:
+        name: test-servers/common
+        tasks_from: create_user.yml

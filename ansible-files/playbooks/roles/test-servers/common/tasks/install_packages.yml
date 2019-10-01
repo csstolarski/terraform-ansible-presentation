@@ -1,0 +1,14 @@
+---
+  - name: install tmux
+    become: yes
+    become_user: root
+    yum:
+      name: tmux
+      state: latest
+  - name: install the latest version of vim 
+    become: yes
+    become_user: root
+    yum:
+      name: vim 
+      state: latest
+  
