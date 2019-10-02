@@ -1,4 +1,5 @@
 keys
 terraform-files/test-server/terraform.*
 terraform-files/test-server/.terraform
+MakeFile
 

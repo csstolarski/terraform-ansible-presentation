@@ -1,5 +1,4 @@
 
-//NEVER DO THIS - hardcode your creds into terraform
 variable "region" {
   default = "us-east-2"
 }

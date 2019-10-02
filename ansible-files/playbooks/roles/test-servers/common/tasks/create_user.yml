@@ -1,1 +1,7 @@
 ---
+- name: Add the user 'Billy' with a bash shell, appending the group 'admins' 
+  user:
+    name: Billy 
+    shell: /bin/bash
+    groups: adm
+    append: yes
